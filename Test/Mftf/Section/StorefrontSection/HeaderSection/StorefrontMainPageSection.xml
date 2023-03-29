@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="urn:magento:mftf:Page/etc/SectionObject.xsd">
+    <section name="StorefrontMainPageSection">
+        <element name="CurrencySwitch" type="button" timeout="10"
+                 selector="//div[contains(@class,'flex')]//div[contains(@class,'flex')][contains(string(),'Currency')]//button"/>
+        <element name="CurrencyForChoose" type="button" parameterized="true" timeout="10"
+                 selector="//div[contains(string(),'Currency')]//div[@role='menu']//a[contains(string(), '{{var}}')]" />
+    </section>
+</sections>

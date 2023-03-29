@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="urn:magento:mftf:Page/etc/SectionObject.xsd">
+    <section name="StorefrontCustomerWishlistProductSection">
+        <element name="ProductInfoByName" type="text" parameterized="true" timeout="10"
+                 selector="//li[.//a[contains(text(), '{{var1}}')]]//div[contains(@class, 'product-item-info')]"/>
+        <element name="ProductQuantity" type="input" parameterized="true"
+                 selector="//a[contains(text(), '{{productName}}')]/ancestor::div[contains(@class, 'product-item-info')]//input[contains(@name,'qty')]"/>
+        <element name="ProductUpdateWishList" type="button" selector="//button[@name='do']" timeout="30"/>
+        <element name="SuccessUpdateMessage" type="text" parameterized="true"
+                 selector="//div[contains(string(), '{{prodName}} has been updated in your Wish List.')][@ui-id]"/>
+        <element name="ProductDescription" type="input" parameterized="true"
+                 selector="//a[contains(text(), '{{productName}}')]/ancestor::div[contains(@class, 'product-item-info')]//textarea" />
+    </section>
+</sections>

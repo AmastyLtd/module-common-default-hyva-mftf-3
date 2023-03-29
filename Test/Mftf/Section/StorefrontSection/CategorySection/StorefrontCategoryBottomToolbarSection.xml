@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="urn:magento:mftf:Page/etc/SectionObject.xsd">
+    <section name="StorefrontCategoryBottomToolbarSection">
+        <element name="nextPages" type="button" timeout="30"
+                 selector="//div[@class='column main']//*[contains(@class, 'toolbar')][2]//a[contains(@class, 'next')]"/>
+        <element name="perPage" type="select"
+                 selector="//div[@class='column main']//*[contains(@class, 'toolbar')][2]//select[@data-role='limiter']"/>
+    </section>
+</sections>

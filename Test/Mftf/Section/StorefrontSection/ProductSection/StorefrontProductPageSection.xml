@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="urn:magento:mftf:Page/etc/SectionObject.xsd">
+    <section name="StorefrontProductPageSection">
+        <element name="QtyLabel" type="block" selector="//div[contains(@id, 'product-details')]" />
+        <element name="AddProductToWishList" type="button" timeout="10"
+                 selector="//div[@class='column main']/div[contains(@class, 'product')][1]//*[@id='add-to-wishlist']" />
+        <element name="SelectAttributeOption" type="select"
+                 selector="//form[@id='product_addtocart_form']//div//select[contains(@name, 'attribute')]"/>
+        <element name="ProductName" type="block" selector="//p[contains(@class, 'title')]//strong"/>
+    </section>
+</sections>

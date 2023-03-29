@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="urn:magento:mftf:Page/etc/SectionObject.xsd">
+    <section name="StorefrontCustomerDashboardAccountInformationSection">
+        <element name="ContactInformation" type="textarea"
+                 selector="//h2[contains(string(), 'Contact Information')]//parent::div//p"/>
+        <element name="CompareClear" type="button"
+                 selector="//button[@aria-label='Remove all Products'][contains(@x-data, 'Compare')]"/>
+        <element name="CompareBlock" type="block" selector="//div[contains(@class, 'compare')]" />
+        <element name="HyvaCommunityVieOrder" type="button" parameterized="true" timeout="10"
+                 selector="//div[@id='my-orders-table']//div[contains(string(), '{{orderId}}')]//following::div[5]//a" />
+    </section>
+</sections>

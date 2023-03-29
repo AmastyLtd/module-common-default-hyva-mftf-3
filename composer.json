@@ -1,0 +1,23 @@
+{
+    "name": "amasty/module-common-default-hyva-mftf-3",
+    "description": "Basics MFTF Functionality v. 3.x.x Compatibility Hyva by Amasty Team",
+    "require": {
+        "php": ">=7.3",
+        "amasty/module-common-tests-mftf-3": ">=1.9.0",
+        "hyva-themes/magento2-default-theme": ">=1.1.19",
+        "hyva-themes/magento2-compat-module-fallback": ">=1.1.2"
+    },
+    "type": "magento2-module",
+    "version": "1.0.1",
+    "license": [
+        "proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Amasty\\CommonDefaultHyvaMFTF3\\": ""
+        }
+    }
+}

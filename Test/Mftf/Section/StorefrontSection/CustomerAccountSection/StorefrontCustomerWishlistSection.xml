@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:mftf:Page/etc/SectionObject.xsd">
+    <section name="StorefrontCustomerWishlistSection">
+        <element name="successMsg" type="text" selector="//div[@class='message success']"/>
+        <element name="ProductDescription" type="input" parameterized="true"
+                 selector="//a[contains(text(), '{{productName}}')]/ancestor::div[contains(@class, 'product-item-info')]//textarea" />
+    </section>
+</sections>

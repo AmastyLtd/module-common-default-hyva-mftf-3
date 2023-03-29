@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:mftf:Page/etc/SectionObject.xsd">
+    <section name="StorefrontProductInfoMainSection">
+        <element name="productAddToCompare" type="button" selector="//button[@id='add-to-compare']"/>
+        <element name="productSku" type="text" selector="//div[@id='product-details']"/>
+        <element name="productName" type="text" selector="//div[@class='product-info-main']//p[contains(@class,'title')]//strong"/>
+        <element name="price" type="text" selector="//span[contains(@id, 'product-price')]"/>
+        <element name="productAttributeTitle1" type="text" selector="//label[contains(@for, 'attribute')]"/>
+        <element name="productAttributeOptions1" type="select" selector="//select[contains(@name, 'attribute')]//option"/>
+    </section>
+</sections>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="urn:magento:mftf:Page/etc/SectionObject.xsd">
+    <section name="StorefrontCustomerSidebarSection">
+        <element name="sidebarTab" type="text" selector="//ul[@class='nav items']//a[text()='{{tabName}}']" parameterized="true" timeout="60"/>
+        <element name="sidebarCurrentTab" type="text" selector="//ul[@class='nav items']//*[contains(text(), '{{var}}')]" parameterized="true"/>
+    </section>
+</sections>

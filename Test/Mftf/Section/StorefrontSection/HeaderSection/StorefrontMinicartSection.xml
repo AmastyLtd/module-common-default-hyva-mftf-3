@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:mftf:Page/etc/SectionObject.xsd">
+    <section name="StorefrontMinicartSection">
+        <element name="showCart" type="button" selector="//a[@id='menu-cart-icon']" timeout="60"/>
+        <element name="viewAndEditCart" type="button" selector="//a[contains(string(),'View and Edit Cart')]" timeout="30"/>
+        <element name="productCount" type="text" selector="//a[@id='menu-cart-icon']//span[@x-text]"/>
+    </section>
+</sections>

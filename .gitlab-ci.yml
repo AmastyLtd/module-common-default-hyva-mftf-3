@@ -1,0 +1,5 @@
+---
+include:
+    - project: 'git-tools/ci-common-repo'
+      ref: master
+      file: '/mftf/gitlab-ci.yml'
