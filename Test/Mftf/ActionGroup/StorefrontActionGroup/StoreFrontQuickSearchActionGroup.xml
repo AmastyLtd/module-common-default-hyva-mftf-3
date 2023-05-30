@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="urn:magento:mftf:Test/etc/actionGroupSchema.xsd">
+    <actionGroup name="StoreFrontQuickSearchActionGroup">
+        <click selector="{{StorefrontQuickSearchSection.openSearchButton}}" before="waitForSearchField"
+               stepKey="clickOpenSearchBtn"/>
+        <waitForElementVisible selector="{{StorefrontQuickSearchSection.searchPhrase}}" before="fillSearchField"
+                               stepKey="waitForSearchField"/>
+        <pressKey selector="{{StorefrontQuickSearchSection.searchPhrase}}"
+                  parameterArray="[\Facebook\WebDriver\WebDriverKeys::ENTER]" stepKey="clickSearchButton"/>
+    </actionGroup>
+</actionGroups>

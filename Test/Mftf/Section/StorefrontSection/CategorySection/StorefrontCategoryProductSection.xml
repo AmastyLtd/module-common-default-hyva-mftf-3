@@ -16,5 +16,6 @@
                  selector="//div[contains(@class, 'filter-option card')][contains(string(), '{{filterOptionName}}')]//parent::div//a[contains(string(), '{{filterItemName}}')]"/>
         <element name="ProductAddToCartByName" type="button" parameterized="true"
                  selector="//div[contains(@class, 'product-info')][contains(string(),'{{var1}}')]//button[@aria-label='Add to Cart']" />
+        <element name="ProductAddToCompareByName" type="text" selector="//*[contains(@class,'product-item')][descendant::a[contains(text(), '{{var1}}')]]//button[contains(@aria-label, 'Add to Compare')]" parameterized="true"/>
     </section>
 </sections>
