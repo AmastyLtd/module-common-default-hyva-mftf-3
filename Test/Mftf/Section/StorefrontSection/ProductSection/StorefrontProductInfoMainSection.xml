@@ -4,9 +4,21 @@
     <section name="StorefrontProductInfoMainSection">
         <element name="productAddToCompare" type="button" selector="//button[@id='add-to-compare']"/>
         <element name="productSku" type="text" selector="//div[@id='product-details']"/>
-        <element name="productName" type="text" selector="//div[@class='product-info-main']//p[contains(@class,'title')]//strong"/>
+        <element name="productName" type="text"
+                 selector="//div[@class='product-info-main']//p[contains(@class,'title')]//strong"/>
         <element name="price" type="text" selector="//span[contains(@id, 'product-price')]"/>
         <element name="productAttributeTitle1" type="text" selector="//label[contains(@for, 'attribute')]"/>
-        <element name="productAttributeOptions1" type="select" selector="//select[contains(@name, 'attribute')]//option"/>
+        <element name="productAttributeOptions1" type="select"
+                 selector="//select[contains(@name, 'attribute')]//option"/>
+        <element name="GiftCardSenderName" type="input"
+                 selector="//span[@x-text='option.title' and contains(string(), 'Sender Name')]/ancestor::div[contains(@class, 'field giftcard')]//input"/>
+        <element name="GiftCardSenderEmail" type="input"
+                 selector="//span[@x-text='option.title' and contains(string(), 'Sender Email')]/ancestor::div[contains(@class, 'field giftcard')]//input"/>
+        <element name="GiftCardRecipientName" type="input"
+                 selector="//span[@x-text='option.title' and contains(string(), 'Recipient Name')]/ancestor::div[contains(@class, 'field giftcard')]//input"/>
+        <element name="GiftCardRecipientEmail" type="input"
+                 selector="//span[@x-text='option.title' and contains(string(), 'Recipient Email')]/ancestor::div[contains(@class, 'field giftcard')]//input"/>
+        <element name="GiftCardMessage" type="input"
+                 selector="//span[@x-text='option.title' and contains(string(), 'Message')]/ancestor::div[contains(@class, 'field giftcard')]//input"/>
     </section>
 </sections>

@@ -4,5 +4,7 @@
     <section name="CheckoutPaymentSection">
         <element name="orderSummaryTotal" type="text"
                  selector="//*[text()='Order Total' or text()='Grand Total']//ancestor::*[contains(@class, 'gr')]"/>
+        <element name="ProductQty" type="block" parameterized="true"
+                 selector="//table[@id='shopping-cart-table']//input[contains(@data-cart-item-id, '{{productSKU}}')]"/>
     </section>
 </sections>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<actionGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:noNamespaceSchemaLocation="urn:magento:mftf:Test/etc/actionGroupSchema.xsd">
-    <actionGroup name="StorefrontAssertProductOnCartActionGroup">
-        <seeInField selector="{{StorefrontCartSection.ProductQtyOnCart(product.name)}}" userInput="{{productQty.qty}}"
-                    stepKey="checkQtyProduct"/>
-    </actionGroup>
-</actionGroups>

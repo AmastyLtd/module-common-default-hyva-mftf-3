@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="urn:magento:mftf:Test/etc/actionGroupSchema.xsd">
+    <actionGroup name="StorefrontFillGiftCardFormActionGroup">
+        <fillField selector="{{StorefrontProductInfoMainSection.GiftCardSenderName}}" userInput="{{sender.fullname}}"
+                   stepKey="fillSenderNameField"/>
+        <fillField selector="{{StorefrontProductInfoMainSection.GiftCardSenderEmail}}" userInput="{{sender.email}}"
+                   stepKey="fillSenderEmailField"/>
+        <fillField selector="{{StorefrontProductInfoMainSection.GiftCardRecipientName}}"
+                   userInput="{{recipient.fullname}}" stepKey="fillRecipientNameField"/>
+        <fillField selector="{{StorefrontProductInfoMainSection.GiftCardRecipientEmail}}"
+                   userInput="{{recipient.email}}" stepKey="fillRecipientEmailField"/>
+        <fillField selector="{{StorefrontProductInfoMainSection.GiftCardMessage}}" userInput="{{message}}"
+                   stepKey="fillMessageField"/>
+    </actionGroup>
+</actionGroups>

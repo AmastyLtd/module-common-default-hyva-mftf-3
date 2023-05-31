@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actionGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:noNamespaceSchemaLocation="urn:magento:mftf:Test/etc/actionGroupSchema.xsd">
-    <actionGroup name="StorefrontChangeQtyProductInCartActionGroup">
-        <fillField selector="{{StorefrontCartSection.ProductQtyOnCart(product.name)}}" userInput="{{productQty.qty}}"
-                   stepKey="changeProductQty"/>
+    <actionGroup name="StorefrontClickProceedToCheckoutActionGroup">
+        <click selector="{{StorefrontCartSection.ProceedToCheckout}}" stepKey="goToCheckout"/>
     </actionGroup>
 </actionGroups>
