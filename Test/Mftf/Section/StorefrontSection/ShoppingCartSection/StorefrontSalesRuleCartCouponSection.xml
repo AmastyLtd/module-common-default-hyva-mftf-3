@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="urn:magento:mftf:Page/etc/SectionObject.xsd">
+    <section name="StorefrontSalesRuleCartCouponSection">
+        <element name="CouponHeader" type="button" selector="#discount-form-toggle"/>
+        <element name="DiscountBlockActive" type="text"
+                 selector="//form[@id='discount-coupon-form' and not(contains(@style, 'display: none;'))]"/>
+        <element name="ApplyButton" type="button" selector="//button[@value='Apply Discount']"/>
+        <element name="CancelButton" type="text" selector="//button[@value='Cancel Coupon']"/>
+    </section>
+</sections>

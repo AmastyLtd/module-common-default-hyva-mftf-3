@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="urn:magento:mftf:Test/etc/actionGroupSchema.xsd">>
+    <actionGroup name="AssertStorefrontShoppingCartSummaryItemsActionGroup">
+        <waitForElementVisible selector="{{StorefrontCartSection.Subtotal}}" stepKey="waitForSubtotalVisible"/>
+        <see selector="{{StorefrontCartSection.Subtotal}}" userInput="{{subtotal}}" stepKey="assertSubtotal"/>
+        <waitForElementVisible selector="{{StorefrontCartSection.Total}}" stepKey="waitForTotalVisible"/>
+        <waitForElementVisible selector="{{StorefrontCartSection.TotalAmount(total)}}"
+                               stepKey="waitForTotalAmountVisible"/>
+        <see selector="{{StorefrontCartSection.Total}}" userInput="{{total}}" stepKey="assertTotal"/>
+        <seeElement  selector="{{StorefrontCartSection.ProceedToCheckout}}" stepKey="seeProceedToCheckoutButton"/>
+    </actionGroup>
+</actionGroups>

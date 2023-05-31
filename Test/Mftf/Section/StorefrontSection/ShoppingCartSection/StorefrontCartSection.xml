@@ -8,12 +8,23 @@
                  selector="//table[@id='shopping-cart-table']//a[contains(string(), '{{productName}}')]/ancestor::tbody//input"/>
         <element name="DeleteProductButton" type="button" parameterized="true" timeout="10"
                  selector="//table[@id='shopping-cart-table']//a[contains(string(), '{{productName}}')]/following::tr[1]//a[@title='Remove item']"/>
-        <element name="DiscountAmount" type="block" selector="//div[contains(@class, 'border-container')][contains(string(), 'Discount')]"/>
+        <element name="DiscountAmount" type="block"
+                 selector="//div[contains(@class, 'border-container')][contains(string(), 'Discount')]"/>
         <element name="ProceedToCheckout" type="button" selector="//a[@id='checkout-link-button']"/>
         <element name="EmailLogin" type="input" selector="//input[@id='form-login-username']"/>
         <element name="PasswordLogin" type="input" selector="//input[@id='form-login-password']"/>
         <element name="SignInButton" type="button" selector="//form[@id='login-form']//button"/>
         <element name="LoginPopUp" type="block"
                  selector="//form[@id='login-form']"/>
+        <element name="TaxAmount" type="text"
+                 selector="//div[@x-html='segment.title' and contains(string(), 'Tax')]//following-sibling::div[contains(@x-text, 'segment.value')]"/>
+        <element name="Subtotal" type="text"
+                 selector="//div[contains(@x-html, 'segment.title') and contains(string(), 'Subtotal')]//following-sibling::div[contains(@x-text, 'totalsData.subtotal')]"/>
+        <element name="Total" type="text"
+                 selector="//div[contains(@x-html, 'segment.title') and contains(string(), 'Grand Total')]//following-sibling::div[contains(@x-text, 'segment.value)')]"/>
+        <element name="TotalAmount" type="text" parameterized="true"
+                 selector="//div[contains(@x-html, 'segment.title') and contains(string(), 'Grand Total')]//following-sibling::div[contains(@x-text, 'segment.value)') and contains(string(), '{{amount}}')]"/>
+        <element name="Shipping" type="text"
+                 selector="//div[contains(@x-html, 'segment.title') and contains(string(), 'Shipping')]//following-sibling::div[contains(@x-text, 'segment.value')]"/>
     </section>
 </sections>

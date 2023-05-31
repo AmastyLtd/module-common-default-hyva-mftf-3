@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="urn:magento:mftf:Test/etc/actionGroupSchema.xsd">
+    <actionGroup name="StorefrontCancelCouponActionGroup">
+        <waitForElement selector="{{StorefrontSalesRuleCartCouponSection.CouponHeader}}" stepKey="waitForCouponHeader"/>
+        <conditionalClick selector="{{StorefrontSalesRuleCartCouponSection.CouponHeader}}"
+                          dependentSelector="{{StorefrontSalesRuleCartCouponSection.DiscountBlockActive}}"
+                          visible="false" stepKey="clickCouponHeader"/>
+        <click selector="{{StorefrontSalesRuleCartCouponSection.CancelButton}}" stepKey="clickCancelButton"/>
+    </actionGroup>
+</actionGroups>

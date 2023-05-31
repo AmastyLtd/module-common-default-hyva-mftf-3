@@ -4,6 +4,7 @@
         <sequence>
             <module name="Magento_Checkout" />
             <module name="Magento_Wishlist" />
+            <module name="Magento_SalesRule" />
             <module name="Amasty_CommonTestsMFTF3" />
         </sequence>
     </module>
