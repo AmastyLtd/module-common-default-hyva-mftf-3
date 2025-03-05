@@ -23,3 +23,22 @@
 Run a special command for correct operation of the waits when you are running any tests <br><br>
 <code>bin/magento amasty-mftf:hyva:waiting-update</code><br>
 
+<h2>Other Amasty extensions</h2>
+-> <a href="https://amasty.com/landing-pages-for-magento-2.html" target="_blank">Landing Pages for Magento 2</a><br>
+-> <a href="https://amasty.com/instagram-feed-for-magento-2.html" target="_blank">Instagram Feed for Magento 2</a><br>
+-> <a href="https://amasty.com/infinite-scroll-for-magento-2.html" target="_blank">Infinite Scroll for Magento 2</a><br>
+-> <a href="https://amasty.com/improved-sorting-for-magento-2.html" target="_blank">Improved Sorting for Magento 2</a><br>
+-> <a href="https://amasty.com/improved-layered-navigation-for-magento-2.html" target="_blank">Improved Layered Navigation for Magento 2</a><br>
+-> <a href="https://amasty.com/import-products-for-magento-2.html" target="_blank">Import Products for Magento 2</a><br>
+-> <a href="https://amasty.com/import-orders-for-magento-2.html" target="_blank">Import Orders for Magento 2</a><br>
+-> <a href="https://amasty.com/import-customers-for-magento-2.html" target="_blank">Import Customers for Magento 2</a><br>
+-> <a href="https://amasty.com/import-and-export-for-magento-2.html" target="_blank">Import and Export for Magento 2</a><br>
+-> <a href="https://amasty.com/hyva-theme-extensions-for-magento-2.html" target="_blank">Hyva Theme Extensions for Magento 2</a><br>
+-> <a href="https://amasty.com/html-sitemap-for-magento-2.html" target="_blank">HTML Sitemap for Magento 2</a><br>
+-> <a href="https://amasty.com/hide-price-for-magento-2.html" target="_blank">Hide Price for Magento 2</a><br>
+-> <a href="https://amasty.com/grouped-options-for-magento-2.html" target="_blank">Grouped Options for Magento 2</a><br>
+-> <a href="https://amasty.com/google-tag-manager-for-magento-2.html" target="_blank">Google Analytics 4 with GTM Support</a><br>
+-> <a href="https://amasty.com/magento-google-rich-snippets.html" target="_blank">Google Rich Snippets</a><br>
+-> <a href="https://amasty.com/magento-google-page-speed-optimizer.html" target="_blank">Google Page Speed Optimizer</a><br>
+-> <a href="https://amasty.com/magento-google-captcha.html" target="_blank">Google Invisible reCaptcha</a><br>
+-> <a href="https://amasty.com/magento-gift-card.html" target="_blank">Gift Card</a><br>
